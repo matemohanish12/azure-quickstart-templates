@@ -12,7 +12,7 @@ steps:
   inputs:
     SourceFolder: 'quickstarts/microsoft.web/webapp-linux-managed-mysql/'
     Contents: '**'
-    TargetFolder: '
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
